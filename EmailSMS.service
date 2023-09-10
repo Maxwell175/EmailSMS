@@ -1,0 +1,12 @@
+[Unit]
+Description=EmailSMS
+After=network.target
+
+[Service]
+ExecStart=<path to install>/EmailSMS
+Type=simple
+Restart=always
+
+[Install]
+WantedBy=default.target
+RequiredBy=network.target
